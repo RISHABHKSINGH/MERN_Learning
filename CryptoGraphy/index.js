@@ -32,7 +32,7 @@ const encrypt = (publicKey, message) => {
 const decrypt = (privateKey, encryptedMessage) => {
   const decrypted = crypto.privateDecrypt(
     privateKey,
-    Buffer.from(encryptedMessage,"base64")
+    Buffer.from(encryptedMessage, "base64"),
   );
   return decrypted.toString("utf8");
 };

@@ -59,35 +59,6 @@ export const signup = async (req, res) => {
 };
 
 //! See this login one i have simply written it
-// export const login = async (req, res) => {
-//   const { email, password } = req.body;
-//   try {
-//     const user = await User.findOne({ email });
-//     if (!user) {
-//       return res.status(400).json({ message: "Invalid Credentials" });
-//     }
-//     const isPasswordCorrect = await bcrypt.compare(password, user.password);
-
-//     if (!isPasswordCorrect) {
-//       return res.status(400).json({
-//         message: "Invalid Credentials",
-//       });
-//     }
-//     //* Such that it can set our cookies
-//     generateToken(user._id, res);
-//     res.status(200).json({
-//       _id: user._id,
-//       fullName: newUser.fullName,
-//       email: newUser.email,
-//       profilePic: newUser.profilePic,
-//     });
-//   } catch (error) {
-//     console.log("Errror in login Controller", error.message);
-//     res.status(500).json({
-//       message: "Internal Server Error",
-//     });
-//   }
-// };
 
 export const login = async (req, res) => {
   const { email, password } = req.body;

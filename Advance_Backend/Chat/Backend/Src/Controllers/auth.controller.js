@@ -104,4 +104,16 @@ export const logout = async (req, res) => {
   }
 };
 
-export const updateProfile = async (req, res) => {};
+export const updateProfile = async (req, res) => {
+  //* This has to Be used by only logged in Person
+  try {
+    const {profilePic} = req.body;
+    
+    //* Grabbing the User ID 
+    const userId = req.user._id;
+
+
+  } catch (error) {
+    
+  }
+};

@@ -94,6 +94,7 @@ export const login = async (req, res) => {
   }
 };
 
+//* This is Logout controller
 export const logout = async (req, res) => {
   try {
     res.cookie("jwt", { maxAge: 0 });
@@ -104,16 +105,14 @@ export const logout = async (req, res) => {
   }
 };
 
+
+//* This is update Profile Controller
 export const updateProfile = async (req, res) => {
   //* This has to Be used by only logged in Person
   try {
-    const {profilePic} = req.body;
-    
-    //* Grabbing the User ID 
+    const { profilePic } = req.body;
+
+    //* Grabbing the User ID
     const userId = req.user._id;
-
-
-  } catch (error) {
-    
-  }
+  } catch (error) {}
 };

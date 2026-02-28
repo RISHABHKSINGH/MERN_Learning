@@ -105,10 +105,9 @@ export const logout = async (req, res) => {
   }
 };
 
-
 //* update Profile Controller
 export const updateProfile = async (req, res) => {
-  //* This has to Be used by only logged in Person
+  //* This has to Be used by only logged in Person this is one Edited
   try {
     const { profilePic } = req.body;
 

@@ -4,7 +4,7 @@ import bcrypt from "bcryptjs";
 import User from "../Models/user.model.js";
 import { generateToken } from "../Utils/utils.js";
 
-//* Signup Controller
+//* This is Signup Controller
 export const signup = async (req, res) => {
   const { email, password, fullName } = req.body;
   try {

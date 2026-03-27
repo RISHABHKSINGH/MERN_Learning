@@ -95,7 +95,7 @@ export const login = async (req, res) => {
   }
 };
 
-//* Logout controller
+//* This is the Logout controller
 export const logout = async (req, res) => {
   try {
     res.cookie("jwt", { maxAge: 0 });

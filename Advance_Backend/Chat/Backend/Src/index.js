@@ -19,7 +19,7 @@ app.use(cookieParser());
 
 
 
-// * Routes
+// * This is Routes
 app.use("/api/auth",authRoutes);
 
 

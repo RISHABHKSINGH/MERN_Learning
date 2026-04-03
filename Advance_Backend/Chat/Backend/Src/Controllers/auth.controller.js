@@ -1,6 +1,6 @@
 import bcrypt from "bcryptjs";
 
-//? Import Created By Our Own
+//? Import Created By Own
 import User from "../Models/user.model.js";
 import { generateToken } from "../Utils/utils.js";
 
